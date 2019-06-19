@@ -19,7 +19,10 @@ class Cart extends Component {
                   <Title name="your" title="cart" />
                   <CartColumns />
                   <CartList passedObject={passedObject} />
-                  <CartTotals passedObject={passedObject} />
+                  <CartTotals
+                    passedObject={passedObject}
+                    history={this.props.history}
+                  />
                 </Fragment>
               );
             } else {
